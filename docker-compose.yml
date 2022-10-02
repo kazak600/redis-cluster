@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  redis-cluster:
+    container_name: my_redis_cluster
+    build:
+      context: .
+      args:
+        redis_version: '6.2.1'
+    ports:
+      - '7000-7005:7000-7005'
+      - '5000-5010:5000-5010'
