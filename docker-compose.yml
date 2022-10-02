@@ -1,7 +1,8 @@
-version: '3.6'
+version: '2'
 services:
   redis-cluster:
     container_name: my_redis_cluster
+    mem_limit: 50m
     build:
       context: .
       args:
